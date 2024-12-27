@@ -3,9 +3,9 @@ class Solution {
         int i;
         for(i=0;i<nums.length;i++){
             if(nums[i]==target)
-                return i;
+                break;
             else if(nums[i]>target) 
-                return i;
+                break;
         }
         return i;
     }
