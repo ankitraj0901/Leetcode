@@ -37,7 +37,7 @@ class Solution {
                     temp.next=temp.next.next;
                 temp=temp.next;
             }
-            return head;
+            //return head;
         }
         return head;
     }
