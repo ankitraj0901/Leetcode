@@ -11,26 +11,24 @@ import java.util.*;
  * }
  */
 public class Solution {
-    public ListNode detectCycle(ListNode head){
-        HashMap<Integer,HashMap<Integer, Boolean>> map=new HashMap<>();
+    public ListNode detectCycle(ListNode head) {
+        HashMap<Integer,Boolean> map=new HashMap<>();
         ListNode temp=head;
-        int index = 0;
-        ListNode result = null;
         while(temp!=null){
-            int hascode = System.identityHashCode(temp);
-            HashMap<Integer, Boolean> isPresent = map.get(hascode);
-            if(isPresent == null){
-                HashMap<Integer, Boolean> x = new HashMap<>();
-                x.put(index, true);
-                map.put(hascode, x);
+            int hashcode=System.identityHashCode(temp);
+            if(map.get(hashcode)==null){
+                map.put(hashcode,true);
             }
-            else{
-                result = temp;
+            else
                 break;
-            }
-            index++;
             temp=temp.next;
         }
-        return result;
+        ListNode temp1=head;
+        int count=-1;
+        while(temp1!=temp){
+            count=count+1;
+            temp1=temp1.next;
+        }
+        return temp;
     }
 }
