@@ -6,6 +6,7 @@ class Solution {
         if(nums.length==2)
             return nums[1];
         int max=0,smax=0,tmax=0,i;
+        System.out.println(max);
         max=nums[nums.length-1];
         for(i=nums.length-1;i>=0;i--){
             if(nums[i]<max){
