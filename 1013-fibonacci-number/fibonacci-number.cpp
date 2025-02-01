@@ -3,16 +3,8 @@ public:
     int fib(int n) {
         if(n==0)
             return 0;
-        int a=0,b=1,x=1;
-        return fab(a,b,x,n);
-    }
-    int fab(int a,int b,int x,int n){
-        int c=0;
-        c=a+b;
-        a=b;
-        b=c;
-        if(x==n)
-            return a;
-        return fab(a, b, x+1, n);
+        if(n==1 || n==2) 
+            return 1;
+        return fib(n-1) + fib(n-2);
     }
 };
