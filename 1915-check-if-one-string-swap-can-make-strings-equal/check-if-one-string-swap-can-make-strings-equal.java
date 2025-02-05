@@ -19,11 +19,9 @@ class Solution {
                 }
                 if(k==c.length)
                     return true;
-                else{
-                    temp=c[i];
-                    c[i]=c[j];
-                    c[j]=temp;
-                }
+                temp=c[i];
+                c[i]=c[j];
+                c[j]=temp;
             }
         }
         return false;
