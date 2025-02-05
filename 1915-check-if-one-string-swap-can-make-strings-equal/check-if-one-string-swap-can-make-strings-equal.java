@@ -13,7 +13,6 @@ class Solution {
                 temp=c[i];
                 c[i]=c[j];
                 c[j]=temp;
-                System.out.println(c);
                 for(k=0;k<c.length;k++){
                     if(c[k]!=d[k])
                         break;
@@ -21,14 +20,9 @@ class Solution {
                 if(k==c.length)
                     return true;
                 else{
-                    // for(int k=0;k<c.length;k++)
-                    //     System.out.println(c[k]);
-                    // c=s1.toCharArray();
                     temp=c[i];
                     c[i]=c[j];
                     c[j]=temp;
-                    System.out.println(c);
-                    System.out.println();
                 }
             }
         }
