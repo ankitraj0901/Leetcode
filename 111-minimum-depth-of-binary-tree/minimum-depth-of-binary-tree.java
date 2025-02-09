@@ -15,13 +15,11 @@
  */
 class Solution {
     public int minDepth(TreeNode root) {
-        int count1=0;
-        int count2=0;
+        int count1=0,count2=0;
         if(root==null){
             return 0;
         }
-        count1++;
-        count2++;
+        count1++;count2++;
         count1+=minDepth(root.left);
         count2+=minDepth(root.right);
         if(root.left==null)
