@@ -18,19 +18,25 @@ class Solution {
         boolean flag=false;
         if(root==null)
             return false;
-        if (root.left==null && root.right==null)
-            return root.val==targetSum;
+        else if (root.left==null && root.right==null){
+            if(root.val==targetSum)
+                return true;
+        }
         // else if (root.left!=null || root.right!=null){
         //     if(root.val==targetSum)
         //         return false;
         // }
         if(root.left!=null){
+            // if(root.val==targetSum && root.left.val!=0)
+            //     return false;
             root.left.val=root.val+root.left.val;
             flag=hasPathSum(root.left,targetSum);
             if(flag==true)
                 return true;
         }
         if(root.right!=null){
+            // if(root.val==targetSum && root.right.val!=0)
+            //     return false;
             root.right.val=root.val+root.right.val; 
             flag=hasPathSum(root.right,targetSum);
             if(flag==true)
@@ -38,7 +44,7 @@ class Solution {
         }
         // if(root.val==targetSum){
         //     return true;
-        
+        // }
         return false;
     }
 }
