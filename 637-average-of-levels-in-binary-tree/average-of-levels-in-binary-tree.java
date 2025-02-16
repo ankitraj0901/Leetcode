@@ -31,11 +31,9 @@ class Solution {
                 if(q.peek().right!=null){
                     q.add(q.peek().right);
                 }
-                //System.out.print(q.peek().val);
                 sum+=q.peek().val;
                 q.remove();
             }
-            System.out.println(sum);
             result=sum/size;
             list.add(result);
         }
