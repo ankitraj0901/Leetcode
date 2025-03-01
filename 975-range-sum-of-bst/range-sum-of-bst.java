@@ -18,14 +18,10 @@ class Solution {
         int sum=0;
         if(root!=null){
             sum+=rangeSumBST(root.left,low,high);
-            // if(root.val>=low && root.val<=high){
-            //     sum+=root.val;
-            // }
             sum+=rangeSumBST(root.right,low,high);
             if(root.val>=low && root.val<=high){
                 sum+=root.val;
             }
-            System.out.println(sum);
             return sum;
         }
         return 0;
