@@ -1,12 +1,5 @@
 class Solution {
     public int search(int[] nums, int target) {
-        // if(nums.length==0)
-        //     return -1;
-        // if(nums.length==1)
-        //     if(nums[0]==target)
-        //         return 0;
-        //     else
-        //         return -1;
         int mid=nums.length/2;
         if(target<nums[mid]){
             for(int i=0;i<mid;i++){
