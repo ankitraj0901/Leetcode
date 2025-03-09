@@ -14,7 +14,7 @@ public:
             if (list[i - 1].size() > 1) {
                 temp.push_back(1);
                 
-                for (int k = 0; k < list[i - 1].size() - 1; k++) {
+                for (size_t k = 0; k < list[i - 1].size() - 1; k++) {
                     int val = list[i - 1][k] + list[i - 1][k + 1];
                     temp.push_back(val);
                 }
