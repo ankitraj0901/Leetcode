@@ -23,8 +23,8 @@ class Solution {
             return false;
         else if(root.right==null)
             return false;
-        else if(root.left.val!=root.right.val)
-            return false;
+        // else if(root.left.val!=root.right.val)
+        //     return false;
         Queue<TreeNode> q1=new LinkedList<>();
         Queue<TreeNode> q2=new LinkedList<>();
         TreeNode temp1=null,temp2=null;
