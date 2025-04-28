@@ -21,11 +21,6 @@ public:
         lastindex2=lastindex;
         for(int i=lastindex,j=0;i>=0;i--,j++)
             arr2[j]=arr[i];
-        for(int l=0;l<=lastindex2;l++)
-            cout<<arr[l];
-        cout<<endl;
-        for(int l=0;l<=lastindex2;l++)
-            cout<<arr2[l];
         for(int k=0;k<=lastindex2;k++){
             if(arr2[k]!=arr[k])
                 return false;
