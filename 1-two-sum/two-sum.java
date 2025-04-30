@@ -11,8 +11,8 @@ class Solution {
                     break;
                 }
             }
-            if(x)
-                break;
+            // if(x)
+            //     break;
         }
         return arr;
     }
