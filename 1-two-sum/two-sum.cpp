@@ -11,9 +11,7 @@ public:
                 v1.push_back(m[second]);
                 break;
             }
-            else{
-                m[first]=i;
-            }
+            m[first]=i;
         }
         return v1;
     }
