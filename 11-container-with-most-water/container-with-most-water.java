@@ -4,9 +4,7 @@ class Solution {
         while(i<=height.length-2 && j>=i+1){
             if(i==0 && j==height.length-1){
                 breadth=j-i;
-                System.out.println(breadth);
                 area1=height[i]<=height[j]?breadth*height[i]:breadth*height[j];
-                System.out.println(area1);
                 
             }
             else{
