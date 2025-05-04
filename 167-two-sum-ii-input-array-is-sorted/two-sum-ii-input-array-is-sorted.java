@@ -5,8 +5,8 @@ class Solution {
         for(int i=0;i<numbers.length;i++){
             int res=target-numbers[i];
             if(h1.containsKey(res)){
-                arr[1]=h1.get(res);
-                arr[0]=i+1;
+                arr[0]=h1.get(res);
+                arr[1]=i+1;
                 Arrays.sort(arr);
                 return arr;
             }
