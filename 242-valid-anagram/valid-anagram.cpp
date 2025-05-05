@@ -9,8 +9,6 @@ public:
             else
                 m[s[i]]=1;
         }
-        for(auto p:m)
-            cout<<p.first<<p.second<<endl;
         for(j=0;j<t.size();j++){
             if(m.find(t[j])!=m.end() && m[t[j]]>0)
                 m[t[j]]-=1;
