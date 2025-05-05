@@ -2,7 +2,7 @@ class Solution {
 public:
     int maxArea(vector<int>& height) {
         int i=0,j=(height.size()-1),breadth,area1=0,area2=0;
-        while(i<=height.size()-2 && j>=i+1){
+        while(i<=j){
             if(i==0 && j==height.size()-1){
                 breadth=j-i;
                 area1=height[i]<=height[j]?breadth*height[i]:breadth*height[j];
