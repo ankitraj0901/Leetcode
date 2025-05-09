@@ -25,10 +25,8 @@ public:
                     }
                 }
             }
-            // if(index!=0){
-            // }
-                v1.push_back(index);
-                m2[index]=true;
+            v1.push_back(index);
+            m2[index]=true;
             
         }
         return v1;
