@@ -33,6 +33,6 @@ public:
         for(int i=res1;i<=res2;i++)
             v1.push_back(i);
         
-        return v1;        
+        return v1;     
     }
 };
