@@ -3,7 +3,6 @@ public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
         int i=0,j=matrix[i].size()-1;
         while(i<matrix.size() && j<matrix[i].size()){
-            cout<<"wle"<<endl;
             if(target<matrix[i][j]){
                 break;
             }
@@ -13,8 +12,6 @@ public:
             else
                 return true;
         }
-        cout<<i<<endl;
-        cout<<j;
         if(i==matrix.size()){
             return false;
         }
@@ -24,9 +21,6 @@ public:
         int st,end,mid=0;
         st=0;
         end=j;
-        // cout<<st<<endl;
-        // cout<<end<<endl;
-        // cout<<i;
         while(st<=end){
             mid=st+(end-st)/2;
             if(target<matrix[i][mid])
