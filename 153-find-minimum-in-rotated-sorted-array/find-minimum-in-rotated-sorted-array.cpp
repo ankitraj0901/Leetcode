@@ -9,7 +9,6 @@ public:
         int st=0,end=nums.size()-1,mid,res=-1;
         while(st<=end){
             mid=st+(end-st)/2;
-            cout<<end<<endl;
             if(nums[mid]>nums[0])
                 st=mid+1;
             else if(nums[mid]<nums[0]){
@@ -17,11 +16,8 @@ public:
                 end=mid-1;
             }
             else{
-                // if(nums[mid]<nums[0])
-                //     res=mid;
                 st=mid+1;
             }
-            // cout<<st<<endl; 
         }
         if(res==-1)
             return nums[0];
