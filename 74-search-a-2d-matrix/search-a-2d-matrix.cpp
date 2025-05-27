@@ -4,8 +4,8 @@ public:
         int i=0,j=matrix[i].size()-1,st=0,end=matrix.size()-1,mid;
         while(st<=end){
             mid=st+(end-st)/2;
-            if(target<matrix[mid][j]){
-                if(target<=matrix[mid][j] && target>=matrix[mid][0])
+            if(target<=matrix[mid][j]){
+                if(target>=matrix[mid][0])
                     break;
                 end=mid-1;
             }
@@ -15,8 +15,6 @@ public:
             else
                 return true;
         }
-        cout<<mid<<endl;
-        cout<<j<<endl;
         if(i==matrix.size()){
             return false;
         }
