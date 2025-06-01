@@ -4,13 +4,13 @@ public:
         int st=0,end=letters.size()-1,mid,lstMin=-1;
         while(st<=end){
             mid=st+(end-st)/2;
-            if(target==letters[mid])
-                st=mid+1;
-            else if(target<letters[mid]){
+            // if(target==letters[mid])
+            //     st=mid+1;
+            if(target<letters[mid]){
                 lstMin=mid;
                 end=mid-1;
             }
-            else if(target>letters[mid]){
+            else if(target>=letters[mid]){
                 st=mid+1;
             }
         }
