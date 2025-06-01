@@ -16,8 +16,6 @@ public:
         }
         if(lstMin==-1)
             return letters[0];
-        // if(lstMin==-1)
-        //     return letters[mid+1];
         return letters[lstMin];
     }
 };
