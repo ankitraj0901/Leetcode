@@ -16,9 +16,9 @@ public:
                     nums[j]=nums[j+1];
                     j++;
                 }
+                if(i==nums.size()-count)
+                    return i;
                 i--;
-                if(i+1==nums.size()-count)
-                    return i+1;
             }
         }
         return i;      
