@@ -17,7 +17,7 @@ public:
                     j++;
                 }
                 if(i==nums.size()-count)
-                    return i;
+                    break;
                 i--;
             }
         }
