@@ -16,7 +16,7 @@ public:
                 max_profit = max(curr_profit , max_profit);
             }
         }
-        if (buy_price < prices[i-1])
+        // if (buy_price < prices[i-1])
             res += max_profit;
         return res;
     }
