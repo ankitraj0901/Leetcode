@@ -34,7 +34,6 @@ class Solution {
                 }
             }
         }
-        System.out.println(max_depth);
         return max_depth;
     }
 }
