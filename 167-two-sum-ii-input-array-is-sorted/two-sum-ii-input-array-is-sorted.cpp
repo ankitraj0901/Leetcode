@@ -5,14 +5,10 @@ public:
         vector<int> res;
         while(st < end) {
             int sum = numbers[st] + numbers[end];
-            if (sum < target) {
-                cout<<"hello";
+            if (sum < target) 
                 st += 1 ;
-            }
-            else if (sum > target){
-                cout<<"bye";
+            else if (sum > target)
                 end -= 1;
-            }
             else if (sum == target){
                 res.push_back(st+1);
                 res.push_back(end+1);
